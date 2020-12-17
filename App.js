@@ -4,6 +4,7 @@ import { StyleSheet, Text, View, FlatList } from 'react-native';
 import Header from './components/header';
 import TodoItem from './components/todoItem';
 import AddToDo from './components/AddToDo';
+
 export default function App() {
   const [todos, setTodos] = useState([
     { text: 'buy coffee', key: '1' },
@@ -52,9 +53,11 @@ const styles = StyleSheet.create({
   },
   content:{
     padding:40,
-    
+    flex:1,
+
   },
   list:{
+    flex:1,
     marginTop:20,
   },
 });
